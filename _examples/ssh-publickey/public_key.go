@@ -45,32 +45,19 @@ func main() {
 			}
 
 			go func() {
-				fmt.Println("pty")
-				for {
-					buf := make([]byte, 255)
-					io.CopyBuffer(os.Stdout, f, buf)
-					// fmt.Println(tee)
-					fmt.Println(string(buf))
-					// scanner := bufio.NewScanner(f)
-					// if scanner.Scan() {
-					// 	text := scanner.Text()
-					// 	fmt.Println(text)
-					// 	fmt.Fprintf(fo, "commands : %s\n", text)
-					// 	// go io.Copy(f, s)
-					if len(buf) > 0 {
-
-						go io.Copy(s, f) // stdout
-					}
-					// }
-				}
-			}()
-			fmt.Println("1")
-			go func() {
 				for win := range winCh {
 					setWinsize(f, win.Width, win.Height)
 				}
 			}()
-			fmt.Println("2")
+			// func scanCmd(f *os.File) string{
+			// 	scanner := bufio.NewScanner(f)
+			// 	for scanner.Scan() {
+			// 		text := scanner.Text()
+			// 		fmt.Println("ssss", text)
+			// 		fmt.Fprintf(fo, "commands : %s\n", text)
+			// 		go io.Copy(f, s)
+			// 	}
+			// }
 			go func() {
 				io.Copy(f, s) // stdin
 			}()
@@ -88,13 +75,3 @@ func main() {
 	log.Println("starting ssh server on port 2222...")
 	log.Fatal(ssh.ListenAndServe(":2222", nil, publicKeyOption))
 }
-
-// func scanCmd(f *os.File) string{
-// 	scanner := bufio.NewScanner(f)
-// 	for scanner.Scan() {
-// 		text := scanner.Text()
-// 		fmt.Println("ssss", text)
-// 		fmt.Fprintf(fo, "commands : %s\n", text)
-// 		go io.Copy(f, s)
-// 	}
-// }
