@@ -1,0 +1,59 @@
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54797
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54800
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54805
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54917
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54941
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54947
+Local Addr : 192.168.1.130:2222
+commands : ]0;osboxes@osboxes: /home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickeyosboxes@osboxes:/home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickey
+commands : $ ]0;osboxes@osboxes: /home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickeyosboxes@osboxes:/home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickey
+commands : $ ]0;osboxes@osboxes: /home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickeyosboxes@osboxes:/home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickey
+commands : $ cd ..
+commands : cd ..
+commands : cd ..
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54960
+Local Addr : 192.168.1.130:2222
+commands : ]0;osboxes@osboxes: /home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickeyosboxes@osboxes:/home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickey
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54963
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:54969
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:55146
+Local Addr : 192.168.1.130:2222
+commands : To run a command as administrator (user "root"), use "sudo <command>".
+commands : See "man sudo_root" for details.
+commands : 
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:55167
+Local Addr : 192.168.1.130:2222
+user : osboxes
+Protocol : tcp
+Remote Addr : 192.168.1.231:55199
+Local Addr : 192.168.1.130:2222
+commands : ]0;osboxes@osboxes: /home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickeyosboxes@osboxes:/home/osboxes/go_projects/src/ssh-master/_examples/ssh-publickey
